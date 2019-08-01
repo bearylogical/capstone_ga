@@ -1,0 +1,8 @@
+trakomatic:
+    user : syamil8@gmail.com
+    pw : Y40KnrYDau
+    token : 13dde3211808b2715df405a990d2271561348ad80d25973078bb9fd6cc9c034a
+postgres:
+    user : api_helper
+    pw : Rskfazw9..
+    dbname : twcc_trako

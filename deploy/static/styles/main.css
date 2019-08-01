@@ -1,0 +1,403 @@
+html, body {
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.subtitle-text {
+    font-size: medium;
+}
+.landing-bg {
+    height:100vh;
+    background-image: url("../images/background_edit.png");
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.about-section{
+    height:100vh;
+    padding: 0;
+    overflow: scroll;
+    background-color: white;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+}
+
+.how-section {
+    height: 100vh;
+    padding: 0;
+    overflow: scroll;
+    background-color: #C31807;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+}
+.summary-section{
+    height: 100vh;
+    padding: 0;
+    overflow:scroll;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+#landing-panel {
+    text-align: left;
+    position: absolute;
+    background-color: lightgrey;
+    border-radius: 0.5rem;
+}
+
+section:before {
+    height: 70px;
+    content: "";
+    display: block;
+}
+
+.landing-content {
+    padding: 16em 0 3em 0;
+}
+
+#landing-info {
+    opacity: 1;
+}
+
+.graph-section {
+    height: 100vh;
+    padding: 0;
+    background-color: ghostwhite;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+}
+
+.glance-section{
+    height:100vh;
+    padding: 0;
+    background-color: ghostwhite;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+    background-color: white;
+}
+
+a.navbar-brand{
+    font-size: x-large;
+    color: black;
+}
+
+h1.mainText{
+    color: black;
+    font-size: xx-large;
+    text-align: right;
+}
+
+a.nav-link{
+    color: lightgrey;
+}
+
+a.nav-link:hover{
+    color: black;
+}
+
+/*.full-height {*/
+/*height: 100%;*/
+/*}*/
+
+/*.speech {*/
+/*height:100%;*/
+/*}*/
+/*
+ * Cover
+ */
+.cover {
+    padding: 0 1.5rem;
+}
+
+.cover .btn-lg {
+    padding: .75rem 1.25rem;
+    font-weight: 700;
+}
+
+
+
+#btn-get-speech{
+    position: relative;
+}
+
+#random-speech{
+    text-align: justify;
+    font-size: medium;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 10px;
+}
+
+#random-speech-src{
+    text-align: left;
+    font-size: medium;
+}
+
+.landing-title {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.options-btn{
+    text-align: center;
+}
+
+#options-row {
+    margin-top: 10px;
+}
+
+.speech-right{
+    position: relative;
+    text-align: justify;
+    font-size: medium;
+}
+/*style=""*/
+.row-full{
+    position: relative;
+    margin-top: 20px;
+}
+.btn-time-opt{
+    text-align: center;
+    word-wrap: break-word;
+}
+
+#readingtime{
+    position: absolute;
+    text-align: right;
+    top : 40%;
+}
+
+span.person{
+    background-color: gold;
+}
+
+span.question{
+    background-color: chartreuse;
+}
+
+span.response {
+    background-color: gold;
+}
+
+.landingText {
+    display: block;
+}
+
+.btn{
+white-space:normal !important;
+    max-width:100%;
+    height: 50px;
+}
+
+#navbar .nav-pills .nav-item.open .nav-link, #navbar .nav-pills .nav-item.open .nav-link:focus, #navbar .nav-pills .nav-item.open .nav-link:hover, #navbar .nav-pills .nav-link.active, #navbar .nav-pills .nav-link.active:focus, #navbar .nav-pills .nav-link.active:hover {
+    background-color: #e7e7e7;
+    border-color: transparent;
+    color: #555555;
+}
+
+.outline {
+    fill: none;
+    stroke: #888888;
+    stroke-width: 1px;
+}
+
+#tooltip {
+    font-size: 10pt;
+    font-weight: 900;
+
+    fill: #000000;
+    stroke: #ffffff;
+    stroke-width: 0.25px;
+}
+
+.link {
+    stroke: #ccc;
+}
+
+.node text {
+    pointer-events: none;
+
+}
+
+.card-text {
+    font-size: 1em;
+    color: #7F7F7F;
+    text-align: justify;
+
+}
+
+.card-title {
+    color: #565656;
+    font-weight: bolder;
+}
+
+#subTitle {
+    color: #A9A6A6;
+    margin-top: -10px;
+    font-size: 1em;
+
+}
+
+#recommends {
+    position: relative;
+    top: 5%;
+    margin-right: 0.1%;
+    margin-left: 0.1%;
+    height: auto;
+    width: auto;
+}
+
+/*#recommends .card-text{*/
+/*font-size: smaller;*/
+/*!*white-space: nowrap;                   !* IE6 needs any width *!*!*/
+/*!*overflow: visible;              !* "overflow" value must be different from  visible"*!*!*/
+/*!*-o-text-overflow: ellipsis;    !* Opera < 11*!*!*/
+/*!*text-overflow:    ellipsis;    !* IE, Safari (WebKit), Opera >= 11, FF > 6 *!*!*/
+/*}*/
+
+/*#recommends .card-title{*/
+/*white-space: nowrap;                   !* IE6 needs any width *!*/
+/*overflow: hidden;              !* "overflow" value must be different from  visible"*!*/
+/*-o-text-overflow: ellipsis;    !* Opera < 11*!*/
+/*text-overflow:    ellipsis;    !* IE, Safari (WebKit), Opera >= 11, FF > 6 *!*/
+/*}*/
+
+
+/*.card-img{*/
+/*display: block;*/
+/*margin-left: auto;*/
+/*margin-right: auto;*/
+/*width: 50%;*/
+/*}*/
+
+#recommends .card {
+    transition: 0.2s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#recommends .card:hover {
+    transform: scale(1.1);
+    transition: 0.2s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#recommends .card:hover:before {
+    opacity: 1;
+}
+
+.container {
+    -ms-overflow-style: none;
+/ / IE 10 + scrollbar-width: none;
+/ / Firefox
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+/ / Safari and Chrome
+}
+
+
+.container {
+    width: 890px;
+}
+
+#graphic {
+    padding-top: 60px;
+}
+
+
+#sections {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    top: 0px;
+    z-index: 90;
+    padding-bottom: 200px;
+}
+
+.step {
+    margin-bottom: 200px;
+    font-family: "TiemposTextWeb-Regular", "Georgia";
+    font-size: 16px;
+    line-height: 23px;
+    color: #767678;
+}
+
+#sections .title {
+    font-family: Arial, Helvetica, "san-serif";
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: #262626;
+    line-height: 1.2em;
+}
+
+#extra-space {
+    height: 300px;
+}
+
+#vis {
+    display: inline-block;
+    position: fixed;
+    top: 60px;
+    z-index: 1;
+    margin-left: 0;
+    /* height: 600px; */
+    /* width: 600px; */
+    /* background-color: #ddd; */
+}
+
+#vis .title {
+    font-size: 100px;
+    text-anchor: middle;
+}
+
+#vis .sub-title {
+    font-size: 50px;
+    text-anchor: middle;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #666;
+    shape-rendering: crispEdges;
+}
+
+
+.chart-title {
+    font-family: Arial, Helvetica, "san-serif";
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: #262626;
+}
+
+.chart-subtitle {
+    font-family: "TiemposTextWeb-Regular", "Georgia";
+    font-size: 12px;
+    color: #767678;
+}
+
+#title-end {
+    transform: translate(100%);
+    text-align: center;
+}

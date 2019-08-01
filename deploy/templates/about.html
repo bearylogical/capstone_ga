@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>FastParliament - About</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet"
+          href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+          integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+</head>
+<body data-spy="scroll" data-target="#mainNav" data-offset="0">
+<nav id="mainNav" class="navbar navbar-expand-md shadow-sm fixed-top">
+    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="black" fill-rule="evenodd" clip-rule="evenodd">
+        <path d="M20 15c0 .552-.448 1-1 1s-1-.448-1-1 .448-1 1-1 1 .448 1 1m-3 0c0 .552-.448 1-1 1s-1-.448-1-1 .448-1 1-1 1 .448 1 1m-3 0c0 .552-.448 1-1 1s-1-.448-1-1 .448-1 1-1 1 .448 1 1m5.415 4.946c-1 .256-1.989.482-3.324.482-3.465 0-7.091-2.065-7.091-5.423 0-3.128 3.14-5.672 7-5.672 3.844 0 7 2.542 7 5.672 0 1.591-.646 2.527-1.481 3.527l.839 2.686-2.943-1.272zm-13.373-3.375l-4.389 1.896 1.256-4.012c-1.121-1.341-1.909-2.665-1.909-4.699 0-4.277 4.262-7.756 9.5-7.756 5.018 0 9.128 3.194 9.467 7.222-1.19-.566-2.551-.889-3.967-.889-4.199 0-8 2.797-8 6.672 0 .712.147 1.4.411 2.049-.953-.126-1.546-.272-2.369-.483m17.958-1.566c0-2.172-1.199-4.015-3.002-5.21l.002-.039c0-5.086-4.988-8.756-10.5-8.756-5.546 0-10.5 3.698-10.5 8.756 0 1.794.646 3.556 1.791 4.922l-1.744 5.572 6.078-2.625c.982.253 1.932.407 2.85.489 1.317 1.953 3.876 3.314 7.116 3.314 1.019 0 2.105-.135 3.242-.428l4.631 2-1.328-4.245c.871-1.042 1.364-2.384 1.364-3.75"/>
+    </svg>
+    &nbsp
+    <a class="navbar-brand" href="#">FastParliament</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul class="navbar-nav ml-auto nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="/#landing">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/about">Background</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/#summary">Summarizr</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/graph">Hansard-Graph</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="/#glance">Glance</a>
+        </li>
+    </ul>
+    {#        <form class="form-inline mt-2 mt-md-0">#}
+    {#          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">#}
+    {#          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>#}
+    {#        </form>#}
+
+</nav>
+
+<div class="container">
+
+    <div id='graphic'>
+        <div id='sections'>
+            <section class="step">
+                <div class="title">Background</div>
+                There is a widely held claim that political apathy is rife in Singapore.
+            </section>
+            <section class="step">
+                <div class="title">Other Interests?</div>
+                Under a largely one party rule for the last 55 years, disinterest in the Singapore parliamentary system
+                does not come at a surprise considering the largely deterministic nature of debates that have occured.
+            </section>
+            <section class="step">
+                <div class="title">Renewing Interest</div>
+                Attempts to improve interest in the ongoings of the Singapore parliament have been largely met with
+                confused responses.<br/> <br/> The latest attempt - Parley the lion mascot - has been met with a largely
+                puzzled response in the online community.
+            </section>
+            <section class="step">
+                <div class="title">A more "modern" Parliament?</div>
+                Fast parliament is a forward-looking concept to generate high-quality data on Singapore's Parliament via
+                the Hansard Database. <br/> <br/>Using Natural Language Processing (NLP) techniques on a ten year corpus
+                (2009-2019), FastParliament address 3 key concerns.
+            </section>
+            <section class="step">
+                <div class="title">Problem One</div>
+                Parliamentary Speeches can be hard to follow. Moreover, the total time parliamentarians spent talking
+                have been increasing each year.
+            </section>
+            <section class="step">
+                <div class="title">Problem Two</div>
+                Each speech is a treasure trove of information.<br/> <br/> How do we distill the information such that
+                we only get key points?
+            </section>
+            <section class="step">
+                <div class="title">Problem Three</div>
+                How can we best understand each parliamentarian?<br/> <br/> More importantly, how should we start
+                looking at relationships within the Hansard?
+            </section>
+            <section id="title-end" class="step">
+                <div class="title">Try it out</div>
+                Here
+            </section>
+        </div>
+        <div id='vis'>
+        </div>
+        <div id="extra-space">
+        </div>
+    </div>
+
+
+</div>
+
+
+{#<script src="{{ url_for('static', filename='js/graph.js')}}"></script>#}
+{#<script>#}
+{##}
+{#d3.json("{{ url_for('static', filename='assets/node_export.json')}}", drawGraph);#}
+{#</script>#}
+
+
+</section>
+
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="{{ url_for('static', filename='js/scroller.js') }}"></script>
+<script src="{{ url_for('static', filename='js/sections.js') }}"></script>
+</body>
+</html>
